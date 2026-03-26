@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { X, Maximize2, ExternalLink } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
 
       <main className="flex-1 flex items-center justify-center p-8">
         <div className="text-center space-y-4">
-          <h2 className="text-5xl font-bold tracking-tighter opacity-20">SYSTEM STANDBY</h2>
+          <h2 className="text-5xl font-bold tracking-tighter opacity-20 text-[#556b2f]">SYSTEM STANDBY</h2>
           <p className="text-xs font-mono text-white/20 uppercase tracking-[0.5em]">Waiting for instructions...</p>
         </div>
       </main>
@@ -34,11 +34,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2 opacity-50">
             <span className="font-bold tracking-tighter uppercase">sock.os</span>
-          </div>
-          <div className="flex gap-8 text-xs font-mono text-white/40">
-            <a href="#" className="hover:text-white transition-colors">PRIVACY</a>
-            <a href="#" className="hover:text-white transition-colors">TERMS</a>
-            <a href="#" className="hover:text-white transition-colors">CONTACT</a>
           </div>
           <p className="text-[10px] font-mono text-white/20">
             &copy; 2026 SOCK.OS. ALL RIGHTS RESERVED.
