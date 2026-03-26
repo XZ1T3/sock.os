@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { X, Maximize2, ExternalLink } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-[#556b2f] selection:text-white flex flex-col">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans flex flex-col">
       <header className="border-b border-white/10 bg-black/50 backdrop-blur-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-center">
           <div className="flex items-center gap-4">
