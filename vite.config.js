@@ -88,3 +88,17 @@ export default defineConfig({
     assetsDir: 'assets',
   }
 });
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  // This dot-slash forces everything to stay inside your project folder
+  base: './', 
+  plugins: [react(), tailwindcss()],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  }
+});
