@@ -51,3 +51,11 @@ export default defineConfig({
     assetsDir: 'assets',
   }
 });
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  base: './', // This tells the built site to look in the current folder
+  plugins: [react(), tailwindcss()],
+});
