@@ -59,3 +59,18 @@ export default defineConfig({
   base: './', // This tells the built site to look in the current folder
   plugins: [react(), tailwindcss()],
 });
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  // This dot-slash is the secret to making GitHub Pages find your files
+  base: './', 
+  plugins: [react(), tailwindcss()],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    // This ensures the build doesn't fail if it finds small issues
+    emptyOutDir: true,
+  }
+});
